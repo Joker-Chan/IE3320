@@ -9,9 +9,12 @@ Cut words and clean data
 line116: file path to process
 line177: file path to save result
 
+
+
 ---cuted data---
 2. LDA_.py:
 Devide the data into several \# of topics
+
 
 num_topics: \# of topics
 /data/topic_0~num_topics-1.txt: categorized weibo
