@@ -12,9 +12,9 @@ import os
 
 import numpy as np
 import matplotlib.pyplot as plt
+num_topics =10
+f = open("./data/weibo_nof_vec.txt", "r", encoding='utf-8')1
 
-
-f = open("./data/weibo_nof_vec.txt", "r", encoding='utf-8')
 texts = [document.split() for document in f]
 
 dictionary = Dictionary(texts)
@@ -29,18 +29,18 @@ print('done with corpus.')
 lda = LdaModel(corpus, id2word=dictionary, iterations=100, num_topics=10)
 
 #print(lda.print_topics())
-for i in range(0,10):
+for i in range(0,num_topics):
     print("-----------------------------------")
     print(lda.print_topic(i))
 
 #lda.save('lda')
 topic = []
 
-for i in range (0,10):
+for i in range (0,num_topics):
     topic.append(open("./data/topic_" + str(i)+".txt", "w", encoding='utf-8'))
     topic[i].write(lda.print_topic(i) + '\n')
-topic.append(open("./data/topic_10.txt", "w", encoding='utf-8'))
-topic[10].write("empty topic" + '\n')
+topic.append(open("./data/topic_"+str(num_topics)+".txt", "w", encoding='utf-8'))
+topic[num_topics].write("empty topic" + '\n')
 #print(dictionary[corpus[1][0][0]] + '-------------')
 
 
