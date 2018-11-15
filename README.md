@@ -23,3 +23,12 @@ both the py file can run directly.
 
 ## data:
 stopwords.txt: 800+ stopwords.
+
+## ntused-negative/positive.txt
+dictionary for emotional key words
+
+## first_test.txt
+The blogs after data clean
+
+## 
+
