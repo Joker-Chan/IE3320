@@ -21,5 +21,30 @@ both the py file can run directly.
 
 --data in topics--
 
+## 3. classify.py
+Classify blogs
+
+## 4. count.py
+Count the distribution of classified blogs
+
 ## data:
 stopwords.txt: 800+ stopwords.
+
+## ntused-negative/positive.txt
+dictionary for emotional key words
+
+## first_test.txt
+The blogs after data clean
+
+## Result.txt
+The result of the data classification. The order of the result is the same as the input file.
+n represents negative
+p represents positive
+middle represents the number of negative and positive words are the same
+cannot classify represents there are no key word in this blog
+
+## count_result.txt
+The distribution of classification result
+
+## topic_0 - 10.txt
+The blogs for different topics.
