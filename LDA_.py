@@ -13,7 +13,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 num_topics =10
-f = open("./data/weibo_nof_vec.txt", "r", encoding='utf-8')1
+f = open("./data/weibo_nof_vec.txt", "r", encoding='utf-8')
 
 texts = [document.split() for document in f]
 

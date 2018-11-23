@@ -113,8 +113,8 @@ def build_corpus(filename,savename):
 if __name__ == "__main__":
 
 
-    filename = './data/output.txt'
-    savename = './data/weibo_nof_vec.txt'
+    filename = './data/raw/output.txt'
+    savename = './data/cutword/weibo_nof_vec.txt'
     build_corpus(filename,savename)
 
     #delete()
